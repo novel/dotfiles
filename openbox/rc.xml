@@ -181,6 +181,16 @@
             <execute>xterm -e mutt</execute>
           </action>
       </keybind>
+      <keybind key="x">
+	  <action name="execute">
+	    <execute>xterm</execute>
+	  </action>
+      </keybind>
+      <keybind key="i">
+	  <action name="execute">
+            <execute>aterm -e irssi</execute>
+	  </action>
+      </keybind>
     </keybind>
     <!-- eof apps -->
     <!-- media stuff -->
