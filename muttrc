@@ -1,0 +1,117 @@
+set folder = "~/Mail"
+mailboxes =inbox
+mailboxes =lj_notify
+mailboxes =autosaratov
+mailboxes =sarlug
+mailboxes =ru-committers
+mailboxes =ports-committers
+mailboxes =freebsd-announce
+mailboxes =freebsd-developers
+mailboxes =ports-developers
+mailboxes =freebsd-ports
+mailboxes =freebsd-standarts
+mailboxes =freebsd-multimedia
+mailboxes =freebsd-current
+mailboxes =freebsd-stable
+mailboxes =freebsd-net
+mailboxes =freebsd-pf
+mailboxes =freebsd-wip
+mailboxes =wzdftpd-commits
+mailboxes =conky-devel
+mailboxes =conky-commits
+mailboxes =gnutls-dev
+mailboxes =cvs-src
+mailboxes =cvs-projects
+mailboxes =cvs-doc
+mailboxes =postfix-users
+mailboxes =django-users
+
+set beep = no
+set sort = threads
+set delete = yes
+set move = yes
+set record = +outbox
+set sig_dashes = no
+set user_agent = no
+set realname = "Roman Bogorodskiy"
+set from = "novel@FreeBSD.org"
+set hostname = "underworld.novel.ru"
+set include = yes
+set include_onlyfirst = yes
+set date_format = "!%A, %b %d, %Y at %I:%M:%S%p %Z"
+
+# formatting
+set attribution = "  %n wrote:\n"
+set index_format = "%4C %Z %{%b %d} %-18.18n (%?l?%4l&%4c?) %s"
+set attach_format = "%u%D%I %t%4n %T%.40d%> (%.16m/%.16M, %.6e%?C?, %C?, %s) "
+set compose_format = "-- Mutt on %h: Compose  [Approx. msg size: %l   Atts: %a]%>-"
+
+ignore *
+unignore from: subject to cc \
+	date x-mailer x-url user-agent
+hdr_order from to cc date subject x-mailer user-agent
+
+macro index G "!fetchmail\r"
+macro pager G "!fetchmail\r"
+
+#set sendmail="/usr/local/bin/msmtp"
+
+set send_charset="us-ascii:koi8-r:utf-8"
+
+source ~/.mutt/themes/mirrorbox
+#source ~/.mutt/themes/blah
+#source ~/.mutt/themes/default
+#source ~/.mutt/themes/trans-cyan
+#source ~/.mutt/themes/trans-yellow
+#source ~/.mutt/themes/trans-blue
+#source ~/.mutt/themes/trans-green
+#source ~/.mutt/themes/trans-red
+#source ~/.mutt/themes/rosenfeldstheme
+#source ~/.mutt/themes/tomastheme
+#source ~/.mutt/themes/openbsd
+#source ~/.mutt/themes/ice
+#source ~/.mutt/themes/color
+#source ~/.mutt/themes/comidia
+
+auto_view text/html
+
+# mail lists
+subscribe	sarlug \
+		ports@freebsd\.org \
+		standarts@freebsd\.org \
+		developers@freebsd\.org \
+		ports-committers@freebsd\.org \
+		ru-committers@freebsd\.org \
+		conky-development \
+		gnutls-dev
+
+# gnupg stuff
+#crypt_autosign = yes
+source ~/.mutt/gpg.rc
+set crypt_autosign = yes
+
+# msmtp
+set sendmail = "/usr/local/bin/msmtp"
+set use_from = yes
+set envelope_from = yes
+
+# headers
+my_hdr X-PGP: http://people.freebsd.org/~novel/novel.key.asc
+
+macro generic "<esc>1" ":set from=novel@FreeBSD.org"
+macro generic "<esc>2" ":set from=bogorodskiy@gmail.com"
+
+### hooks
+# lj
+folder-hook .		'set sort = "threads"; \
+			set signature = "~/.signature"; \
+			set attribution = "  %n wrote:\n"; \
+			set include = yes; \
+			set crypt_autosign = yes; \
+			set fast_reply = no'
+folder-hook lj_notify	'set sort = date-received; \
+			set signature ="~/.signature.lj"; \
+			set attribution = ""; \
+			set include = no; \
+			set crypt_autosign = no; \
+			set fast_reply = yes;'
