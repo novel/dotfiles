@@ -197,13 +197,19 @@
     <keybind key="W-m" chroot="true">
       <keybind key="9">
         <action name="execute">
-	  <execute>mixer vol -10</execute>
-	</action>
+	   <execute>mixer vol -10</execute>
+        </action>
+        <action name="execute">
+	   <execute>~/scripts/osdmixer</execute>
+        </action>
       </keybind>
       <keybind key="0">
         <action name="execute">
 	  <execute>mixer vol +10</execute>
-	</action>
+        </action>
+        <action name="execute">
+	   <execute>~/scripts/osdmixer</execute>
+        </action>
       </keybind>
       <keybind key="Escape"><action name="BreakChroot"/></keybind>
     </keybind>

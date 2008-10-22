@@ -121,7 +121,8 @@ function CppStuff()
 endfunction
 
 function EcruStuff()
-	set wrap linebreak textwidth=70
+	"set wrap linebreak textwidth=70
+	set textwidth=70
 	set ft=html
 	set spell
 	set backup " ecru is not stable yet ;]
