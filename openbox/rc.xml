@@ -165,7 +165,7 @@
       </action>
     </keybind>
     <!-- apps -->
-    <keybind key="C-e">
+    <keybind key="W-e">
       <keybind key="f">
         <action name="execute">
           <execute>firefox</execute>
@@ -178,18 +178,23 @@
       </keybind>
       <keybind key="m">
 	  <action name="execute">
-            <execute>xterm -e mutt</execute>
+            <execute>urxvt -e mutt</execute>
           </action>
       </keybind>
       <keybind key="x">
 	  <action name="execute">
-	    <execute>xterm</execute>
+	    <execute>urxvt</execute>
 	  </action>
       </keybind>
       <keybind key="i">
 	  <action name="execute">
             <execute>aterm -e irssi</execute>
 	  </action>
+      </keybind>
+      <keybind key="d">
+	  <action name="execute">
+	    <execute>idea</execute>
+          </action>
       </keybind>
     </keybind>
     <!-- eof apps -->
