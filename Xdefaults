@@ -1,0 +1,11 @@
+URxvt*scrollBar:		false
+URxvt*font: xft:DejaVu Sans Mono:style=Regular:pixelsize=14
+URxvt*background: grey30
+URxvt*foreground: white
+URxvt*modifier: meta
+
+XTerm*scrollBar:		false
+XTerm*faceName:  DejaVu Sans Mono
+XTerm*faceSize: 11
+XTerm*background: grey30
+XTerm*foreground: white

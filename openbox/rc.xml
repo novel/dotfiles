@@ -178,12 +178,12 @@
       </keybind>
       <keybind key="m">
 	  <action name="execute">
-            <execute>urxvt -e mutt</execute>
+            <execute>xterm -e mutt</execute>
           </action>
       </keybind>
       <keybind key="x">
 	  <action name="execute">
-	    <execute>urxvt</execute>
+	    <execute>xterm</execute>
 	  </action>
       </keybind>
       <keybind key="i">
