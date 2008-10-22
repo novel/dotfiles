@@ -55,6 +55,7 @@ endif " has("autocmd")
 set nobackup
 set noerrorbells
 set showcmd
+set showmode
 set ruler
 set incsearch
 set laststatus=2 
@@ -94,7 +95,15 @@ map <C-q> :emenu Tabs.<Tab>
 
 map <C-1>  :buffers
 
-"colorscheme desert
+map <A-1> :NERDTreeToggle <CR>
+imap <A-1> <ESC> :NERDTreeToggle <CR>
+
+
+"display tabs and trailing spaces
+set list
+set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
+
+colorscheme desert
 "
 " mappings for tabs
 map <C-T>t	:tabnew<cr>
@@ -103,7 +112,7 @@ map <C-T>n	:tabnext<cr>
 map <C-T>p	:tabprevious<cr>
 
 " autocmd
-autocmd FileType mail setlocal spell spelllang=en,ru 
+autocmd FileType mail setlocal spell spelllang=en,ru
 autocmd FileType txt setlocal spell spelllang=en,ru
 autocmd FIleType php,python set nu
 autocmd FileType python call PythonStuff()
