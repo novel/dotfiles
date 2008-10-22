@@ -165,7 +165,7 @@
       </action>
     </keybind>
     <!-- apps -->
-    <keybind key="C-e">
+    <keybind key="W-e">
       <keybind key="f">
         <action name="execute">
           <execute>firefox</execute>
@@ -190,6 +190,11 @@
 	  <action name="execute">
             <execute>aterm -e irssi</execute>
 	  </action>
+      </keybind>
+      <keybind key="d">
+	  <action name="execute">
+	    <execute>idea</execute>
+          </action>
       </keybind>
     </keybind>
     <!-- eof apps -->
