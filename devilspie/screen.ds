@@ -1,0 +1,1 @@
+(if (is (application_name) "screen") (set_workspace 1))

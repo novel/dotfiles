@@ -166,6 +166,11 @@
     </keybind>
     <!-- apps -->
     <keybind key="W-e">
+      <keybind key="e">
+	<action name="execute">
+          <execute>gmrun</execute>
+	</action>
+      </keybind>
       <keybind key="f">
         <action name="execute">
           <execute>firefox</execute>

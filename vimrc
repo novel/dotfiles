@@ -98,10 +98,11 @@ map <C-1>  :buffers
 map <A-1> :NERDTreeToggle <CR>
 imap <A-1> <ESC> :NERDTreeToggle <CR>
 
-"display tabs and trailing spaces
-set list
-set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
-
+if $OS == "Linux"
+	"display tabs and trailing spaces
+	set list
+	set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
+endif
 colorscheme desert
 "
 " mappings for tabs
