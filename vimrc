@@ -118,6 +118,8 @@ autocmd FIleType php,python set nu
 autocmd FileType python call PythonStuff()
 autocmd FileType cpp call CppStuff()
 autocmd BufRead /tmp/ecru* call EcruStuff()
+" devilspie
+autocmd BufRead *.ds setlocal ft=lisp
 " set ts=4
 "
 function PythonStuff()
@@ -131,8 +133,9 @@ endfunction
 
 function EcruStuff()
 	"set wrap linebreak textwidth=70
-	set textwidth=70
-	set ft=html
-	set spell
-	set backup " ecru is not stable yet ;]
+	setlocal textwidth=70
+	setlocal ft=html
+	setlocal spell
+	setlocal backup " ecru is not stable yet ;]
+	setlocal spell spelllang=en,ru
 endfunction
