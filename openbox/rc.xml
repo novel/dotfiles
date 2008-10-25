@@ -181,6 +181,11 @@
            <execute>pidgin</execute>
          </action>
       </keybind>
+      <keybind key="s">
+	 <action name="execute">
+           <execute>xterm -e screen</execute>
+	 </action>
+      </keybind>
       <keybind key="m">
 	  <action name="execute">
             <execute>xterm -e mutt</execute>

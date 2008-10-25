@@ -1,1 +1,7 @@
-(if (is (application_name) "screen") (set_workspace 1))
+(if
+	(is (application_name) "screen")
+	(begin
+		(set_workspace 1)
+		(maximize)
+	)
+)
