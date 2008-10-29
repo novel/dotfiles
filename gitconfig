@@ -1,0 +1,17 @@
+[user]
+	name = Roman Bogorodskiy
+	email = bogorodskiy@gmail.com
+[alias] 
+        co = checkout
+	cm = checkout master
+	ci = commit
+	di = diff
+	br = branch
+	st = status
+	cb = checkout -b
+	a = add
+	ai = add -i
+	pom = push origin master
+	cam = commit -a -m
+	m = merge
+
