@@ -113,7 +113,7 @@ map <C-T>p	:tabprevious<cr>
 
 " autocmd
 autocmd FileType mail setlocal spell spelllang=en,ru
-autocmd FileType txt setlocal spell spelllang=en,ru
+autocmd FileType txt,tex setlocal spell spelllang=en,ru
 autocmd FIleType php,python set nu
 autocmd FileType python call PythonStuff()
 autocmd FileType cpp call CppStuff()
