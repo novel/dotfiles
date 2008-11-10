@@ -9,3 +9,6 @@ XTerm*faceName:  DejaVu Sans Mono
 XTerm*faceSize: 11
 XTerm*background: grey30
 XTerm*foreground: white
+
+XTerm*metaSendsEscape: true
+XTerm*eightBitInput: false

@@ -196,6 +196,11 @@
 	    <execute>xterm</execute>
 	  </action>
       </keybind>
+      <keybind key="y">
+	  <action name="execute">
+	    <execute>/home/novel/opt/skype_static-2.0.0.72-oss/skype</execute>
+	  </action>
+      </keybind>
       <keybind key="i">
 	  <action name="execute">
             <execute>aterm -e irssi</execute>

@@ -14,4 +14,5 @@
 	pom = push origin master
 	cam = commit -a -m
 	m = merge
+	mm = merge master
 
