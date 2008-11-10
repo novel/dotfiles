@@ -234,6 +234,20 @@
       <keybind key="Escape"><action name="BreakChroot"/></keybind>
     </keybind>
     <!-- eof media stuff -->
+    <!-- wm stuff -->
+    <keybind key="W-w" chroot="true">
+       <keybind key="d">
+	       <action name="ToggleDecorations"/>
+       </keybind>
+       <keybind key="r">
+		<action name="Resize"/> 
+	</keybind>
+	<keybind key="m">
+		<action name="Move"/>
+	</keybind>
+       <keybind key="Escape"><action name="BreakChroot"/></keybind>
+    </keybind>
+    <!-- end of wm stuff -->
     <keybind key="A-F10">
       <action name="MaximizeFull"/>
     </keybind>
