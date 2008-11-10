@@ -626,4 +626,9 @@
     <top>0</top>
     <bottom>0</bottom>
   </margins>
+  <applications>
+      <application class="*">
+        <decor>no</decor>
+      </application>
+  </applications>
 </openbox_config>
