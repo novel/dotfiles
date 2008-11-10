@@ -113,8 +113,8 @@ map <C-T>p	:tabprevious<cr>
 
 " autocmd
 autocmd FileType mail setlocal spell spelllang=en,ru
-autocmd FileType txt setlocal spell spelllang=en,ru
-autocmd FIleType php,sh set nu
+autocmd FileType txt,tex setlocal spell spelllang=en,ru
+autocmd FIleType php,sh,python set nu
 autocmd FileType python call PythonStuff()
 autocmd FileType cpp call CppStuff()
 autocmd BufRead /tmp/ecru* call EcruStuff()

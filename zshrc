@@ -1,6 +1,7 @@
 freebsd_stuff() {
 	export CLICOLOR="yes"
 	export LSCOLORS="Hxfxcxdxbxegedabagacad"
+	export PATH="$PATH:/usr/local/libexec/git-core/"
 }
 
 linux_stuff() {
