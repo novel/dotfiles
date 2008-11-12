@@ -1,2 +1,9 @@
 startup_message off
-caption always "%{= kw}%-w%{= BW}%n %t%{-}%+w %-= @%H - %c"
+defscrollback 5000
+shell -zsh
+#caption always "%{= kw}%-w%{= BW}%n %t%{-}%+w %-= @%H - %LD %d %LM - %c"
+caption always "%{= kw}%-w%{= kC}%n %t%{-}%+w %-= %c"
+bind = resize =
+bind + resize +1
+bind - resize -1
+bind _ resize max
