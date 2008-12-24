@@ -10,6 +10,11 @@ LS_COLORS='no=00:fi=00:di=01;37:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:
 	alias ls='ls --color=auto'
 }
 
+solaris_stuff() {
+	export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+	alias ls='gls --color=auto'
+}
+
 uname=`uname`
 
 case $uname in
@@ -18,6 +23,9 @@ case $uname in
 		;;
 	Linux*)
 		linux_stuff
+		;;
+	SunOS*)
+		solaris_stuff
 		;;
 esac
 
