@@ -2,6 +2,13 @@ freebsd_stuff() {
 	export CLICOLOR="yes"
 	export LSCOLORS="Hxfxcxdxbxegedabagacad"
 	export PATH="$PATH:/usr/local/libexec/git-core/"
+
+	alias acvs1="cvs -d anoncvs@anoncvs1.FreeBSD.org:/home/ncvs"
+	alias acvs="cvs -d freebsdanoncvs@anoncvs.FreeBSD.org:/home/ncvs"
+	alias dcvs="cvs -d novel@dcvs.FreeBSD.org:/home/dcvs"
+	alias pcvs="cvs -d novel@pcvs.FreeBSD.org:/home/pcvs"
+	alias scvs="cvs -d novel@ncvs.FreeBSD.org:/home/ncvs"
+	alias getpr="/usr/ports/Tools/scripts/getpr"
 }
 
 linux_stuff() {
