@@ -97,17 +97,11 @@
         <desktop>1</desktop>
         <dialog>no</dialog>
       </action>
-      <action name="Execute">
-        <execute>~/scripts/osd</execute>
-      </action>
     </keybind>
     <keybind key="C-F2">
       <action name="Desktop">
         <desktop>2</desktop>
         <dialog>no</dialog>
-      </action>
-      <action name="Execute">
-        <execute>~/scripts/osd</execute>
       </action>
     </keybind>
     <keybind key="C-F3">
@@ -115,17 +109,11 @@
         <desktop>3</desktop>
         <dialog>no</dialog>
       </action>
-      <action name="Execute">
-        <execute>~/scripts/osd</execute>
-      </action>
     </keybind>
     <keybind key="C-F4">
       <action name="Desktop">
         <desktop>4</desktop>
         <dialog>no</dialog>
-      </action>
-      <action name="Execute">
-        <execute>~/scripts/osd</execute>
       </action>
     </keybind>
     <keybind key="C-F5">
@@ -133,17 +121,11 @@
         <desktop>5</desktop>
         <dialog>no</dialog>
       </action>
-      <action name="Execute">
-        <execute>~/scripts/osd</execute>
-      </action>
     </keybind>
     <keybind key="C-F6">
       <action name="Desktop">
         <desktop>6</desktop>
         <dialog>no</dialog>
-      </action>
-      <action name="Execute">
-        <execute>~/scripts/osd</execute>
       </action>
     </keybind>
     <keybind key="C-F7">
@@ -151,17 +133,11 @@
         <desktop>7</desktop>
         <dialog>no</dialog>
       </action>
-      <action name="Execute">
-        <execute>~/scripts/osd</execute>
-      </action>
     </keybind>
     <keybind key="C-F8">
       <action name="Desktop">
         <desktop>8</desktop>
         <dialog>no</dialog>
-      </action>
-      <action name="Execute">
-        <execute>~/scripts/osd</execute>
       </action>
     </keybind>
     <!-- apps -->
@@ -183,17 +159,17 @@
       </keybind>
       <keybind key="s">
 	 <action name="execute">
-           <execute>xterm -e screen</execute>
+           <execute>urxvt -e screen</execute>
 	 </action>
       </keybind>
       <keybind key="m">
 	  <action name="execute">
-            <execute>xterm -e mutt</execute>
+            <execute>urxvt -e mutt</execute>
           </action>
       </keybind>
       <keybind key="x">
 	  <action name="execute">
-	    <execute>xterm</execute>
+	    <execute>urxvt</execute>
 	  </action>
       </keybind>
       <keybind key="y">
@@ -203,7 +179,7 @@
       </keybind>
       <keybind key="i">
 	  <action name="execute">
-            <execute>aterm -e irssi</execute>
+            <execute>urxvt -e irssi</execute>
 	  </action>
       </keybind>
       <keybind key="d">
