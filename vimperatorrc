@@ -6,6 +6,11 @@ set visualbell
 set complete=l
 set wildoptions=auto
 highlight hints z-index:5000; font-family:monospace; font-weight: medium; font-size:16px; color:white; background-color: #ef2828; border-color:ButtonShadow; border-width:0px; border-style:solid; padding:0px 1px 0px 1px; position:absolute;
+set go=nbr
+
+
+" workaround to fix progress indicator in tab
+"js styles.removeSheet(true, "tab-binding")
 
 " Abbreviations
 
