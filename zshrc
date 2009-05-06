@@ -24,6 +24,10 @@ solaris_stuff() {
 	alias grep='ggrep'
 }
 
+darwin_stuff() {
+	export PATH="/opt/local/bin:/opt/local/libexec/git-core:$PATH"
+}
+
 uname=`uname`
 
 case $uname in
@@ -36,6 +40,8 @@ case $uname in
 	SunOS*)
 		solaris_stuff
 		;;
+	Darwin*)
+		darwin_stuff
 esac
 
 git_prompt_info() {
