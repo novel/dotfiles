@@ -25,6 +25,9 @@ solaris_stuff() {
 }
 
 darwin_stuff() {
+	export CLICOLOR="yes"
+	export LSCOLORS="Hxfxcxdxbxegedabagacad"
+	
 	export PATH="/opt/local/bin:/opt/local/libexec/git-core:$PATH"
 }
 
@@ -88,6 +91,7 @@ export LC_MESSAGES=C
 export JAVA_HOME="/usr/lib/jvm/java-1.5.0-sun"
 #xport AXIS2_HOME="/home/rbogorodsky/opt/axis2-1.4"
 export PATH="${JAVA_HOME}/bin:/home/novel/opt/apache-maven-2.0.9/bin:$PATH"
+export PATH="~/bin:${PATH}"
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
