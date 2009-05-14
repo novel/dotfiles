@@ -124,6 +124,8 @@ export PAGER="less"
 #QMAKESPEC=freebsd-g++ ; export QMAKESPEC
 #QTDIR=/usr/X11R6 ; export QTDIR
 
+alias cssh='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no '
+
 # fix keys
 bindkey -e
 case "$TERM" in
