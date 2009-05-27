@@ -1,5 +1,7 @@
 " 1.2 (created: 2008/08/16 18:51:52)
 " Mappings
+map zi	zI
+map zo	zO
 
 " Options
 set visualbell
