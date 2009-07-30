@@ -98,6 +98,9 @@ map <C-1>  :buffers
 map <A-1> :NERDTreeToggle <CR>
 imap <A-1> <ESC> :NERDTreeToggle <CR>
 
+nmap <tab> :bn<cr>
+nmap <s-tab> :bp<cr>
+
 if $OS == "Linux"
 	"display tabs and trailing spaces
 	set list
@@ -117,6 +120,7 @@ autocmd FileType txt,tex setlocal spell spelllang=en,ru
 autocmd FIleType php,sh,python set nu
 autocmd FileType python call PythonStuff()
 autocmd FileType cpp call CppStuff()
+autocmd FileType html setl noai nocin nosi inde=
 autocmd BufRead /tmp/ecru* call EcruStuff()
 " devilspie
 autocmd BufRead *.ds setlocal ft=lisp
