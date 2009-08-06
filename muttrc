@@ -15,11 +15,12 @@ set delete = yes
 set edit_hdrs
 set include
 set reply_to
-set abort_nosubject=no
+set abort_nosubject = no
 set sig_dashes = no
 set attribution = "  %n wrote:\n"
 alternates '(username|altusername)([-+].*)?@.*'
 set hdr_format="%4C %Z %{%m/%d} %-15.15F (%4c) %s" # format of the index
+auto_view text/html
 
 hdr_order From: Date: User-Agent: X-Mailer To: Cc: Reply-To: Subject:
 ignore *
@@ -31,10 +32,15 @@ set query_command = "/home/novel/opt/goobook-read-only/contactos.py ‘%s’”
 set sort=threads
 set sort_aux=last-date-received
 
+# default settings
 folder-hook . 'set from = "bogorodskiy@gmail.com"; \
-	set smtp_url= "smtp://bogorodskiy@smtp.gmail.com:587/"'
+	set smtp_url = "smtp://bogorodskiy@smtp.gmail.com:587/"; \
+	set header_cache = "~/.mutt/cache/headers"; \
+	set message_cachedir = "~/.mutt/cache/bodies";'
 
 folder-hook griddynamics 'set from = "rbogorodskiy@griddynamics.com"; \
-			set smtp_url = "smtp://rbogorodskiy@griddynamics.com@smtp.gmail.com:587/";'
+			set smtp_url = "smtp://rbogorodskiy@griddynamics.com@smtp.gmail.com:587/"; \
+			set header_cache = "~/.mutt/wrkcache/headers"; \
+			set message_cachedir = "~/.mutt/wrkcache/bodies";'
 
 source ~/.mutt/themes/mirrorbox
