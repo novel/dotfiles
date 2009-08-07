@@ -43,4 +43,6 @@ folder-hook griddynamics 'set from = "rbogorodskiy@griddynamics.com"; \
 			set header_cache = "~/.mutt/wrkcache/headers"; \
 			set message_cachedir = "~/.mutt/wrkcache/bodies";'
 
+folder-hook sarlug 'set from = "novel@FreeBSD.org"'
+
 source ~/.mutt/themes/mirrorbox
