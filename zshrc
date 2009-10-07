@@ -17,7 +17,7 @@ LS_COLORS='no=00:fi=00:di=01;37:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:
 	alias ls='ls --color=auto'
 	
 	# ruby stuff
-	export PATH="/var/lib/gems/1.8/bin/:${PATH}"
+	export PATH="/var/lib/gems/1.8/bin/:/usr/lib/git-core/:${PATH}"
 }
 
 solaris_stuff() {
