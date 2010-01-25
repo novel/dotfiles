@@ -1,1 +1,2 @@
-text/html w3m -I %{charset} -T text/html -dump; copiousoutput
+text/html; w3m -dump -T text/html %s ;copiousoutput
+application/msword; catdoc %s ;copiousoutput

@@ -60,32 +60,38 @@ def do_install(args):
             print "%s and %s seem equal" % (here, there)
         else:
             print "%s and %s are not equal" % (here, there)
+            os.system("diff -u %s %s|less -E" % (there, here))
 
-            sys.stdout.write("""\n\nActions:
+
+            prompt = """\n\nActions:
 1) replace local file
 2) replace repo file
 3) show diff
-4) skip\n\n""")
+4) skip\n\naction: """
 
-            user_command = raw_input("action: ")
-            print user_command
-            #user_command = sys.stdin.read(1)
+            user_command = -1
 
-            while int(user_command) not in (1, 4):
-                #if int(user_command) == 2:
-                os.system("diff -u %s %s" % (there, here))
+            while user_command not in (1, 2, 4):
+                if user_command == 3:
+                    os.system("diff -u %s %s|less -E" % (there, here))
 
-                user_command = raw_input("\naction: ")
+                user_command = int(raw_input(prompt))
+
+            if user_command == 4:
+                print "Skipping..."
+            elif user_command == 1:
+                sys.stdout.write("\n%s --> %s\n\n" % (here, there))
+                shutil.copyfile(here, there)
+            elif user_command == 2:
+                sys.stdout.write("\n%s --> %s\n\n" % (there, here))
+                shutil.copyfile(there, here)
+            return
 
     files = load_index()
 
     for here, there in files.iteritems():
         if os.path.isfile(here):
             process_file(here, there)
-            #print "%s is a file" % here
-        #os.system("diff -u %s %s" % (here, there))
-
-        #sys.stdin.read(1)
 
 ACTIONS = {"install": do_install,
         "backup": do_backup}

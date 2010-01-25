@@ -10,39 +10,41 @@ set postponed="+[Gmail]/Drafts"
 set header_cache="~/.mutt/cache/headers"
 set message_cachedir="~/.mutt/cache/bodies"
 set certificate_file=~/.mutt/certificates
+set imap_check_subscribed=yes
 set move = no
 set delete = yes
 set edit_hdrs
 set include
 set reply_to
-set abort_nosubject = no
+set abort_nosubject=no
 set sig_dashes = no
 set attribution = "  %n wrote:\n"
 alternates '(username|altusername)([-+].*)?@.*'
 set hdr_format="%4C %Z %{%m/%d} %-15.15F (%4c) %s" # format of the index
-auto_view text/html
 
-hdr_order From: Date: User-Agent: X-Mailer To: Cc: Reply-To: Subject:
 ignore *
-unignore From: Date: User-Agent: X-Mailer To: Cc: Reply-To: Subject:
-my_hdr Reply-To:
+unignore from subject to cc date x-mailer x-url user-agent
+hdr_order from to cc date subject x-mailer user-agent
 
-set query_command = "/home/novel/opt/goobook-read-only/contactos.py ‘%s’”
+set query_command = '/home/novel/opt/goobook-read-only/contactos.py "%s"'
 
 set sort=threads
 set sort_aux=last-date-received
 
-# default settings
 folder-hook . 'set from = "bogorodskiy@gmail.com"; \
-	set smtp_url = "smtp://bogorodskiy@smtp.gmail.com:587/"; \
-	set header_cache = "~/.mutt/cache/headers"; \
-	set message_cachedir = "~/.mutt/cache/bodies";'
+	set smtp_url= "smtp://bogorodskiy@smtp.gmail.com:587/"'
 
 folder-hook griddynamics 'set from = "rbogorodskiy@griddynamics.com"; \
-			set smtp_url = "smtp://rbogorodskiy@griddynamics.com@smtp.gmail.com:587/"; \
-			set header_cache = "~/.mutt/wrkcache/headers"; \
-			set message_cachedir = "~/.mutt/wrkcache/bodies";'
+			set smtp_url = "smtp://rbogorodskiy@griddynamics.com@smtp.gmail.com:587/";'
 
-folder-hook sarlug 'set from = "novel@FreeBSD.org"'
+folder-hook sarlug 'set from = "novel@FreeBSD.org";'
 
 source ~/.mutt/themes/mirrorbox
+
+# gpg
+source ~/.mutt/gpg.rc
+set crypt_autosign = yes
+
+# sidebar
+set sidebar_visible=yes
+set sidebar_width=30
