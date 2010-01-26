@@ -1,0 +1,13 @@
+Xdefaults ~/.Xdefaults
+cvsrc ~/.cvsrc
+devilspie ~/.devilspie
+gitconfig ~/.gitconfig
+mailcap ~/.mailcap
+mutt ~/.mutt
+muttrc ~/.muttrc
+openbox ~/.config/openbox
+screenrc ~/.screenrc
+vim ~/.vim
+vimperatorrc ~/.vimperatorrc
+vimrc ~/.vimrc
+zshrc ~/.zshrc
