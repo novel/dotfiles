@@ -56,6 +56,10 @@ def do_backup(args):
 
 def do_install(args):
     def process_file(here, there):
+        if not os.path.isfile(there):
+            shutil.copy(here, there)
+            return
+
         if filecmp.cmp(here, there) is True:
             print "%s and %s seem equal" % (here, there)
         else:
