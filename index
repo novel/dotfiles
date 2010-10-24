@@ -11,3 +11,4 @@ vim ~/.vim
 vimperatorrc ~/.vimperatorrc
 vimrc ~/.vimrc
 zshrc ~/.zshrc
+emacs ~/.emacs
