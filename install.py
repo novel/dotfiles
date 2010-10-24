@@ -102,7 +102,7 @@ ACTIONS = {"install": do_install,
 BACKUP_DIR = "~/.dotfilesbak"
 
 def usage():
-    sys.stdout.write("usage: %s command [args]\n\n")
+    sys.stdout.write("usage: %s command [args]\n\n" % sys.argv[0])
 
 if __name__ == "__main__":
     if len(sys.argv) <= 1:
