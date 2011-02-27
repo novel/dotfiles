@@ -37,6 +37,7 @@ folder-hook . 'set from = "bogorodskiy@gmail.com"; \
 folder-hook griddynamics 'set from = "rbogorodskiy@griddynamics.com"; \
 			set smtp_url = "smtp://rbogorodskiy@griddynamics.com@smtp.gmail.com:587/";'
 
+folder-hook freebsd-* 'set from = "novel@FreeBSD.org";'
 folder-hook sarlug 'set from = "novel@FreeBSD.org";'
 
 source ~/.mutt/themes/mirrorbox
