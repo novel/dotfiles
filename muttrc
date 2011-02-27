@@ -41,6 +41,8 @@ folder-hook sarlug 'set from = "novel@FreeBSD.org";'
 
 source ~/.mutt/themes/mirrorbox
 
+auto_view text/html
+
 # gpg
 source ~/.mutt/gpg.rc
 set crypt_autosign = yes
