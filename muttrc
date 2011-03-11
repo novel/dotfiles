@@ -26,7 +26,7 @@ ignore *
 unignore from subject to cc date x-mailer x-url user-agent
 hdr_order from to cc date subject x-mailer user-agent
 
-set query_command = '/home/novel/opt/goobook-read-only/contactos.py "%s"'
+set query_command = '/usr/local/bin/goocaa %s'
 
 set sort=threads
 set sort_aux=last-date-received
@@ -34,8 +34,8 @@ set sort_aux=last-date-received
 folder-hook . 'set from = "bogorodskiy@gmail.com"; \
 	set smtp_url= "smtp://bogorodskiy@smtp.gmail.com:587/"'
 
-folder-hook griddynamics 'set from = "rbogorodskiy@griddynamics.com"; \
-			set smtp_url = "smtp://rbogorodskiy@griddynamics.com@smtp.gmail.com:587/";'
+folder-hook mirantis 'set from = "rbogorodskiy@mirantis.com"; \
+			set smtp_url = "smtp://rbogorodskiy@mirantis.com@smtp.gmail.com:587/";'
 
 folder-hook freebsd-* 'set from = "novel@FreeBSD.org";'
 folder-hook sarlug 'set from = "novel@FreeBSD.org";'
