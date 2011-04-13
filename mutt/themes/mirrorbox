@@ -19,7 +19,7 @@ color quoted3		brightcyan	default
 color quoted4		cyan		default
 color quoted5		brightcyan	default
 
-color signature		brightblack	default
+color signature		default		default
 color tilde		brightcyan	default
 color tree		cyan		default
 color markers		brightblack	default
