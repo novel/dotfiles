@@ -42,7 +42,10 @@ folder-hook sarlug 'set from = "novel@FreeBSD.org";'
 
 source ~/.mutt/themes/mirrorbox
 
+alternative_order text/plain
 auto_view text/html
+
+set editor = "vim"
 
 # gpg
 source ~/.mutt/gpg.rc
@@ -51,3 +54,5 @@ set crypt_autosign = yes
 # sidebar
 set sidebar_visible=yes
 set sidebar_width=30
+
+macro index B '<enter-command>toggle sidebar_visible<enter>'
