@@ -15,6 +15,8 @@ set novisualbell
 " workaround to fix progress indicator in tab
 "js styles.removeSheet(true, "tab-binding")
 
+js liberator.beep = function() { return false; }
+
 " Abbreviations
 
 source! ~/.vimperatorrc.local
