@@ -20,3 +20,11 @@ test -z $BG || $BG -solid "#303030"
 if which dbus-launch >/dev/null && test -z "$DBUS_SESSION_BUS_ADDRESS"; then
        eval `dbus-launch --sh-syntax --exit-with-session`
 fi
+
+setxkbmap -option "grp:switch,grp:ctrl_shift_toggle" "us,ru(winkeys)"
+
+docker &
+
+nm-applet --sm-disable &
+
+gnome-power-manager &
