@@ -23,8 +23,12 @@ fi
 
 setxkbmap -option "grp:switch,grp:ctrl_shift_toggle" "us,ru(winkeys)"
 
-docker &
+uname=`uname`
 
-nm-applet --sm-disable &
-
-gnome-power-manager &
+case $uname in
+    Linux*)
+        docker &
+        nm-applet --sm-disable &
+        gnome-power-manager &
+	;;
+esac
