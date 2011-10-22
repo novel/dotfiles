@@ -32,3 +32,7 @@ case $uname in
         gnome-power-manager &
 	;;
 esac
+
+test -f ~/.Xmodmap && xmodmap ~/.Xmodmap
+
+urxvt &
