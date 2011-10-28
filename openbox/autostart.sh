@@ -1,6 +1,8 @@
 # This shell script is run before Openbox launches.
 # Environment variables set here are passed to the Openbox session.
 
+TERM=urxvt
+
 # Set a background color
 BG=""
 if which hsetroot >/dev/null; then
@@ -35,4 +37,4 @@ esac
 
 test -f ~/.Xmodmap && xmodmap ~/.Xmodmap
 
-urxvt &
+$TERM -e screen &
