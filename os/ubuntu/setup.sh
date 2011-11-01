@@ -10,4 +10,5 @@ apt-get install -y openbox \
 	pidgin \
 	mutt-patched \
 	gnupg \
-	gmrun
+	gmrun \
+	xtrlock
