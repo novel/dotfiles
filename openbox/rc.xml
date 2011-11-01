@@ -180,6 +180,11 @@
       <keybind key="i">
 	  <action name="execute">
             <execute>urxvt -e irssi</execute>
+          </action>
+      </keybind>
+      <keybind key="l">
+	  <action name="execute">
+	    <execute>xtrlock</execute>
 	  </action>
       </keybind>
       <keybind key="d">
