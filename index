@@ -14,3 +14,4 @@ zshrc ~/.zshrc
 emacs ~/.emacs
 signature ~/.signature
 xinitrc ~/.xinitrc
+tmux.conf ~/.tmux.conf
