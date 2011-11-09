@@ -9,11 +9,11 @@ if which hsetroot >/dev/null; then
     BG=hsetroot
 else
     if which esetroot >/dev/null; then
-	BG=esetroot
+        BG=esetroot
     else
-	if which xsetroot >/dev/null; then
-	    BG=xsetroot
-	fi
+        if which xsetroot >/dev/null; then
+            BG=xsetroot
+        fi
     fi
 fi
 test -z $BG || $BG -solid "#303030"
@@ -32,9 +32,9 @@ case $uname in
         docker &
         nm-applet --sm-disable &
         gnome-power-manager &
-	;;
+        ;;
 esac
 
 test -f ~/.Xmodmap && xmodmap ~/.Xmodmap
 
-$TERM -e screen &
+$TERM -e tmux &
