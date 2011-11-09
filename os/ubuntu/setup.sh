@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# install necessary stuff
 apt-get install -y openbox \
 	vim-gtk \
 	screen \
@@ -11,4 +12,5 @@ apt-get install -y openbox \
 	mutt-patched \
 	gnupg \
 	gmrun \
-	xtrlock
+	xtrlock \
+	openssh-server
