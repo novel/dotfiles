@@ -189,27 +189,6 @@
       </keybind>
     </keybind>
     <!-- eof apps -->
-    <!-- media stuff -->
-    <keybind key="W-m" chroot="true">
-      <keybind key="9">
-        <action name="execute">
-	   <execute>mixer vol -10</execute>
-        </action>
-        <action name="execute">
-	   <execute>~/scripts/osdmixer</execute>
-        </action>
-      </keybind>
-      <keybind key="0">
-        <action name="execute">
-	  <execute>mixer vol +10</execute>
-        </action>
-        <action name="execute">
-	   <execute>~/scripts/osdmixer</execute>
-        </action>
-      </keybind>
-      <keybind key="Escape"><action name="BreakChroot"/></keybind>
-    </keybind>
-    <!-- eof media stuff -->
     <!-- wm stuff -->
     <keybind key="W-w" chroot="true">
        <keybind key="d">
