@@ -159,7 +159,7 @@
       </keybind>
       <keybind key="s">
 	 <action name="execute">
-           <execute>urxvt -e screen</execute>
+           <execute>urxvt -e tmux</execute>
 	 </action>
       </keybind>
       <keybind key="m">
@@ -186,11 +186,6 @@
 	  <action name="execute">
 	    <execute>xtrlock</execute>
 	  </action>
-      </keybind>
-      <keybind key="d">
-	  <action name="execute">
-	    <execute>idea</execute>
-          </action>
       </keybind>
     </keybind>
     <!-- eof apps -->
