@@ -42,6 +42,9 @@ folder-hook mirantis 'set from = "rbogorodskiy@mirantis.com"; \
 folder-hook freebsd-* 'set from = "novel@FreeBSD.org";'
 folder-hook sarlug 'set from = "novel@FreeBSD.org";'
 
+message-hook '~A' 'set from = "bogorodskiy@gmail.com";'
+message-hook '~C novel@freebsd\.org' 'set from = "novel@FreeBSD.org";'
+
 source ~/.mutt/themes/mirrorbox
 
 alternative_order text/plain
