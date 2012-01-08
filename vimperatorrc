@@ -17,6 +17,12 @@ set novisualbell
 
 js liberator.beep = function() { return false; }
 
+" disable password manager
+set! signon.rememberSignons=false
+
+" don't show warning when closing with tabs
+set! browser.tabs.warnOnClose=false
+
 " Abbreviations
 
 source! ~/.vimperatorrc.local
