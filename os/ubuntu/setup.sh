@@ -1,16 +1,19 @@
 #!/bin/sh
 
 # install necessary stuff
-apt-get install -y openbox \
-	vim-gtk \
-	screen \
-	git-core \
+apt-get install -y \
 	docker \
-	rxvt-unicode \
+	geeqie \
+	git-core \
+	gmrun \
+	gnupg \
+	mutt-patched \
+	openbox \
+	openssh-server \
 	openvpn \
 	pidgin \
-	mutt-patched \
-	gnupg \
-	gmrun \
-	xtrlock \
-	openssh-server
+	rxvt-unicode \
+	screen \
+	vim-gtk \
+	w3m \
+	xtrlock
