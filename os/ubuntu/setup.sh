@@ -19,9 +19,13 @@ apt-get install -y \
 	w3m \
 	xtrlock
 
-pip install yaslov
+pip install \
+	pep8 \
+	pyflakes \
+	yaslov
 
 mkdir /usr/local/bin > /dev/null 2>&1
 
 # for compatibility with gpg scripts
-ln -s /usr/bin/gpg /usr/local/bin/gpg
+test -L /usr/local/bin/gpg || \
+	ln -s /usr/bin/gpg /usr/local/bin/gpg
