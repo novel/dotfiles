@@ -12,8 +12,16 @@ apt-get install -y \
 	openssh-server \
 	openvpn \
 	pidgin \
+	python-pip \
 	rxvt-unicode \
 	screen \
 	vim-gtk \
 	w3m \
 	xtrlock
+
+pip install yaslov
+
+mkdir /usr/local/bin > /dev/null 2>&1
+
+# for compatibility with gpg scripts
+ln -s /usr/bin/gpg /usr/local/bin/gpg
