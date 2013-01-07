@@ -16,3 +16,9 @@
 	pom = push origin master
 	st = status
 	co = checkout
+
+[sendemail]
+	smtpserver = smtp.gmail.com
+	smtpserverport = 587
+	smtpencryption = tls
+	smtpuser = bogorodskiy@gmail.com
