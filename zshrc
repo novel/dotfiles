@@ -111,6 +111,7 @@ alias addbug='ghi -o '
 
 # grep
 export GREP_COLOR="auto"
+export GREP_OPTIONS="--binary-files=without-match --directories=skip"
 
 # editor
 export EDITOR="vim"
