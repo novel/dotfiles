@@ -17,6 +17,9 @@
 	st = status
 	co = checkout
 
+[color]
+	ui = false
+
 [sendemail]
 	smtpserver = smtp.gmail.com
 	smtpserverport = 587
