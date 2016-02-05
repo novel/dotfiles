@@ -11,11 +11,13 @@
 	ci = commit
 	cm = checkout master
 	di = diff
+	dic = diff --cached
 	m = merge
 	mm = merge master
 	pom = push origin master
 	st = status
 	co = checkout
+	shrt = rev-parse --short
 
 [color]
 	ui = false
