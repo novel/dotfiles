@@ -56,7 +56,6 @@ set nobackup
 set noerrorbells
 set showcmd
 set showmode
-set ruler
 set incsearch
 set laststatus=2 
 set magic
@@ -121,7 +120,6 @@ autocmd FIleType php,sh,python set nu
 autocmd FileType python call PythonStuff()
 autocmd FileType cpp call CppStuff()
 autocmd FileType html setl noai nocin nosi inde=
-autocmd BufRead /tmp/ecru* call EcruStuff()
 " devilspie
 autocmd BufRead *.ds setlocal ft=lisp
 " set ts=4
@@ -133,13 +131,4 @@ endfunction
 
 function CppStuff()
 	set nu
-endfunction
-
-function EcruStuff()
-	"set wrap linebreak textwidth=70
-	setlocal textwidth=70
-	setlocal ft=html
-	setlocal spell
-	setlocal backup " ecru is not stable yet ;]
-	setlocal spell spelllang=en,ru
 endfunction
