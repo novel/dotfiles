@@ -2,13 +2,6 @@ freebsd_stuff() {
 	export CLICOLOR="yes"
 	export LSCOLORS="Hxfxcxdxbxegedabagacad"
 	export PATH="$PATH:/usr/local/libexec/git-core/"
-
-	alias acvs1="cvs -d anoncvs@anoncvs1.FreeBSD.org:/home/ncvs"
-	alias acvs="cvs -d freebsdanoncvs@anoncvs.FreeBSD.org:/home/ncvs"
-	alias dcvs="cvs -d novel@dcvs.FreeBSD.org:/home/dcvs"
-	alias pcvs="cvs -d novel@pcvs.FreeBSD.org:/home/pcvs"
-	alias scvs="cvs -d novel@ncvs.FreeBSD.org:/home/ncvs"
-	alias getpr="/usr/ports/Tools/scripts/getpr"
 }
 
 linux_stuff() {
@@ -75,12 +68,7 @@ SAVEHIST=1000
 unsetopt beep
 bindkey -v
 setopt prompt_subst
-#PROMPT="(%D{%H:%M}) %n@%m:%~ $(git_prompt_info)% %#> "
-#PROMPT='%{$fg_bold[green]%}%n@%m %{$fg[blue]%}%c %{$fg_bold[red]%}$(git_prompt_info)%{$fg[blue]%} %% %{$reset_color%}'
 PROMPT='(%D{%H:%M}) %n@%m:%~%{$fg_bold[cyan]%}$(git_prompt_info)%{$reset_color%} %#> ' #%% ' # %{$reset_color%}'
-
-#PS1="(%D{%H:%M}) %n@$terminfo[bold]$fg[white]%m$terminfo[sgr0]:%~ %#> "
-#print "$terminfo[bold]$fg[white]Welcome$terminfo[sgr0] to man zsh-lovers"
 
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
@@ -99,16 +87,6 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# ls
-#export CLICOLOR="yes"
-#alias ls='ls --color=auto'
-
-# XXX leave the defaults while display is broken
-#export LSCOLORS="Hxfxcxdxbxegedabagacad"
-
-alias mybugs='ghi|grep "novel:"'
-alias addbug='ghi -o '
-
 # grep
 export GREP_COLOR="auto"
 export GREP_OPTIONS="--binary-files=without-match --directories=skip"
@@ -116,30 +94,6 @@ export GREP_OPTIONS="--binary-files=without-match --directories=skip"
 # editor
 export EDITOR="vim"
 export PAGER="less"
-
-# cdrecord
-#export CDR_DEVICE="1,0,0"
-
-### aliases
-# system
-#alias reboot="sudo reboot"
-#alias halt="sudo halt"
-#alias shutdown="sudo shutdown"
-#alias eject="sudo cdcontrol eject"
-#alias insert="sudo cdcontrol close"
-
-# freebsd
-#alias acvs1="cvs -d anoncvs@anoncvs1.FreeBSD.org:/home/ncvs"
-#alias acvs="cvs -d freebsdanoncvs@anoncvs.FreeBSD.org:/home/ncvs"
-#alias dcvs="cvs -d novel@dcvs.FreeBSD.org:/home/dcvs"
-#alias pcvs="cvs -d novel@pcvs.FreeBSD.org:/home/pcvs"
-#alias scvs="cvs -d novel@ncvs.FreeBSD.org:/home/ncvs"
-#alias getpr="/usr/ports/Tools/scripts/getpr"
-#alias fbsdmail="fetchmail -f ~/.freebsdfetchmailrc"
-
-# qt
-#QMAKESPEC=freebsd-g++ ; export QMAKESPEC
-#QTDIR=/usr/X11R6 ; export QTDIR
 
 alias cssh='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no '
 
