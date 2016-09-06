@@ -67,6 +67,7 @@ SAVEHIST=1000
 #export LC_MESSAGES="C"
 unsetopt beep
 bindkey -v
+setopt interactivecomments
 setopt prompt_subst
 PROMPT='(%D{%H:%M}) %n@%m:%~%{$fg_bold[cyan]%}$(git_prompt_info)%{$reset_color%} %#> ' #%% ' # %{$reset_color%}'
 
