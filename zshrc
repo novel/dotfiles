@@ -24,7 +24,7 @@ darwin_stuff() {
 	export CLICOLOR="yes"
 	export LSCOLORS="Hxfxcxdxbxegedabagacad"
 	
-	export PATH="/opt/local/bin:/opt/local/libexec/git-core:$PATH"
+	export PATH="/opt/local/bin:/usr/local/opt/git/libexec/git-core:$PATH"
 }
 
 uname=`uname`
