@@ -48,6 +48,11 @@ git_prompt_info() {
 	echo "[${ref#refs/heads/}]"
 }
 
+vim_shell_info() {
+	test -n "${VIMRUNTIME}" || return
+	echo "[vim] "
+}
+
 autoload colors zsh/terminfo
 
 #fpath=(~/.zsh/functions $fpath)
@@ -69,7 +74,7 @@ unsetopt beep
 bindkey -v
 setopt interactivecomments
 setopt prompt_subst
-PROMPT='(%D{%H:%M}) %n@%m:%~%{$fg_bold[cyan]%}$(git_prompt_info)%{$reset_color%} %#> ' #%% ' # %{$reset_color%}'
+PROMPT='(%D{%H:%M}) $(vim_shell_info)%n@%m:%~%{$fg_bold[cyan]%}$(git_prompt_info)%{$reset_color%} %#> '
 
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
