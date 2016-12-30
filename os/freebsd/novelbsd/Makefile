@@ -7,26 +7,24 @@ MAINTAINER=	novel@FreeBSD.org
 COMMENT=	Metaport for stuff I use
 
 RUN_DEPENDS=	\
-                ${KMODDIR}/nvidia.ko:${PORTSDIR}/x11/nvidia-driver \
-                startx:${PORTSDIR}/x11/xinit \
+		startx:${PORTSDIR}/x11/xinit \
 		xset:${PORTSDIR}/x11/xset \
-                X:${PORTSDIR}/x11-servers/xorg-server \
-                zsh:${PORTSDIR}/shells/zsh \
-                sudo:${PORTSDIR}/security/sudo \
-                tmux:${PORTSDIR}/sysutils/tmux \
+		X:${PORTSDIR}/x11-servers/xorg-server \
+		zsh:${PORTSDIR}/shells/zsh \
+		sudo:${PORTSDIR}/security/sudo \
+		tmux:${PORTSDIR}/sysutils/tmux \
 		urxvt:${PORTSDIR}/x11/rxvt-unicode \
-                openbox:${PORTSDIR}/x11-wm/openbox \
-                vim:${PORTSDIR}/editors/vim \
-		mplayer:${PORTSDIR}/multimedia/mplayer \
+		openbox:${PORTSDIR}/x11-wm/openbox \
+		vim:${PORTSDIR}/editors/vim \
+		mpv:${PORTSDIR}/multimedia/mpv \
 		firefox:${PORTSDIR}/www/firefox \
 		nspluginwrapper:${PORTSDIR}/www/nspluginwrapper \
-		flash-player-properties:${PORTSDIR}/www/linux-c6-flashplugin11 \
-                git:${PORTSDIR}/devel/git \
-		pidgin:${PORTSDIR}/net-im/pidgin \
+		flash-player-properties:${PORTSDIR}/www/linux-flashplayer \
+		git:${PORTSDIR}/devel/git \
 		rtorrent:${PORTSDIR}/net-p2p/rtorrent \
 		mutt:${PORTSDIR}/mail/mutt \
 		gpg:${PORTSDIR}/security/gnupg1 \
-		deadbeaf:${PORTSDIR}/audio/deadbeaf \
+		audacious:${PORTSDIR}/multimedia/audacious \
 		portlint:${PORTSDIR}/ports-mgmt/portlint \
 		poudriere:${PORTSDIR}/ports-mgmt/poudriere
 
