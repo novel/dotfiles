@@ -12,12 +12,12 @@
 	cm = checkout master
 	di = diff
 	dic = diff --cached
+	difab = diff --no-prefix -U9999
 	m = merge
 	mm = merge master
 	pom = push origin master
 	st = status
 	co = checkout
-	shrt = rev-parse --short
 
 [color]
 	ui = false
