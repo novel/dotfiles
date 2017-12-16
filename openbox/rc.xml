@@ -298,6 +298,26 @@
         <menu>client-menu</menu>
       </action>
     </keybind>
+    <keybind key="A-S-3">
+      <action name="execute">
+        <execute>~/bin/screenshot.sh -r -f</execute>
+      </action>
+    </keybind>
+    <keybind key="A-S-W-3">
+      <action name="execute">
+        <execute>~/bin/screenshot.sh -r</execute>
+      </action>
+    </keybind>
+    <keybind key="A-S-4">
+      <action name="execute">
+        <execute>~/bin/screenshot.sh -f</execute>
+      </action>
+    </keybind>
+    <keybind key="A-S-W-4">
+      <action name="execute">
+        <execute>~/bin/screenshot.sh</execute>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>3</dragThreshold>
