@@ -1,3 +1,4 @@
+# vim:ft=gitconfig
 [user]
 	name = Roman Bogorodskiy
 	email = bogorodskiy@gmail.com
@@ -6,6 +7,7 @@
 	ai = add -i
 	bl = blame
 	br = branch
+	brdate = for-each-ref --sort='authordate:iso8601' --format=' %(authordate:relative)%09%(refname:short)' refs/heads
 	cam = commit -a -m
 	cb = checkout -b
 	ci = commit
