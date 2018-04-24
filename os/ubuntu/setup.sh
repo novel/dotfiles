@@ -2,7 +2,6 @@
 
 # install necessary stuff
 apt-get install -y \
-	docker \
 	geeqie \
 	git-core \
 	gmrun \
@@ -11,18 +10,16 @@ apt-get install -y \
 	openbox \
 	openssh-server \
 	openvpn \
-	pidgin \
 	python-pip \
 	rxvt-unicode \
-	screen \
+	tmux \
 	vim-gtk \
 	w3m \
 	xtrlock
 
 pip install \
 	pep8 \
-	pyflakes \
-	yaslov
+	pyflakes
 
 mkdir /usr/local/bin > /dev/null 2>&1
 
