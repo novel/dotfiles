@@ -18,8 +18,6 @@ RUN_DEPENDS=	\
 		vim:${PORTSDIR}/editors/vim \
 		mpv:${PORTSDIR}/multimedia/mpv \
 		firefox:${PORTSDIR}/www/firefox \
-		nspluginwrapper:${PORTSDIR}/www/nspluginwrapper \
-		flash-player-properties:${PORTSDIR}/www/linux-flashplayer \
 		git:${PORTSDIR}/devel/git \
 		rtorrent:${PORTSDIR}/net-p2p/rtorrent \
 		mutt:${PORTSDIR}/mail/mutt \
