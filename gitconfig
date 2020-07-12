@@ -29,3 +29,5 @@
 	smtpserverport = 587
 	smtpencryption = tls
 	smtpuser = bogorodskiy@gmail.com
+[pull]
+	ff = only
