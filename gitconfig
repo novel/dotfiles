@@ -20,6 +20,7 @@
 	pom = push origin master
 	st = status
 	co = checkout
+	sw = switch
 
 [color]
 	ui = false
