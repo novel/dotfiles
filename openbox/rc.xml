@@ -144,7 +144,7 @@
     <keybind key="W-e">
       <keybind key="e">
 	<action name="execute">
-          <execute>gmrun</execute>
+          <execute>rofi -show run</execute>
 	</action>
       </keybind>
       <keybind key="f">
@@ -152,9 +152,9 @@
           <execute>firefox</execute>
         </action>
       </keybind>
-      <keybind key="p">
+      <keybind key="t">
 	 <action name="execute">
-           <execute>pidgin</execute>
+           <execute>Telegram</execute>
          </action>
       </keybind>
       <keybind key="s">
@@ -172,14 +172,9 @@
 	    <execute>urxvt</execute>
 	  </action>
       </keybind>
-      <keybind key="y">
-	  <action name="execute">
-	    <execute>skype</execute>
-	  </action>
-      </keybind>
       <keybind key="i">
 	  <action name="execute">
-            <execute>urxvt -e irssi</execute>
+            <execute>urxvt -e weechat</execute>
           </action>
       </keybind>
       <keybind key="l">
